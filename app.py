@@ -14,6 +14,7 @@ st.subheader('Summarize URL')
 groq_api_key = st.sidebar.text_input("Enter your Groq API key", type="password")
 generic_url = st.text_input("Provide the URL", label_visibility="collapsed")
 
+###prompt template
 prompt_template = """
 Provide a summary of the following content in 300 words:
 Content: {text}
