@@ -5,12 +5,12 @@ from langchain_groq import ChatGroq
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLLoader
 
-#####
 
 st.set_page_config(page_title="LangChain: Summarize Text From YT or Website", page_icon="🦜")
 st.title("🦜 LangChain: Summarize Text From YT or Website")
 st.subheader('Summarize URL')
 
+###User needs to provide the api key
 groq_api_key = st.sidebar.text_input("Enter your Groq API key", type="password")
 generic_url = st.text_input("Provide the URL", label_visibility="collapsed")
 
